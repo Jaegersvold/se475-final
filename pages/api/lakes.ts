@@ -19,6 +19,5 @@ export default async function handler(
 
   const rows: Lake[] = data.rows;
 
-  console.log(data);
   res.status(200).json({ data: rows });
 }
