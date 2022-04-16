@@ -74,8 +74,8 @@ const Home: NextPage = () => {
       {/* Display Pannel Tab Content*/}
       <TabPanel value={currentTab} index={1}>
         <Box>
-          {data.map(el => 
-            <p>{el}</p>
+          {data.map(( el, i ) => 
+            <p key={i}>{el}</p>
           )}
         </Box>
       </TabPanel>

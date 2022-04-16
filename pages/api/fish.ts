@@ -9,7 +9,6 @@ export default async function handler(
   _req: NextApiRequest,
   res: NextApiResponse<FishResponse>
 ) {
-
   const client = new Client(credentials);
   await client.connect();
 
@@ -20,5 +19,6 @@ export default async function handler(
   const rows: Fish[] = data.rows;
 
   console.log(data);
+
   res.status(200).json({ data: rows });
 }
