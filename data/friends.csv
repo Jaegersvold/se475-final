@@ -1,6 +1,6 @@
-name,fishing_score
-john,223
-derek,3002
-ed,81
-smith,1233
-dalton,833
+name,fishing_score,bio
+john,223,"My name is john, Been fishing since I was a kid!"
+derek,3002,"New to fishing, grew up in the big city. Learning a lot all the time!"
+ed,81,"Fish are food, not friends!"
+smith,1233,"Going for a new fishing record, this year! Wish me luck! (I'll need it)"
+dalton,833,"Used to go fishing with my grandpa all the time. I gotta get back to it!"
