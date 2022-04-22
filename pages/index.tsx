@@ -111,7 +111,7 @@ const Home: NextPage = () => {
           {friendsData.data.map((friend, i) => 
             <Box display='flex' key={i}>
               <Button id={friend.name} onClick={zoomFriendData}>Name: {friend.name}</Button>
-              <p>Max Depth: {friend.fishing_score}</p>
+              <p>Season Fishing Score: {friend.fishing_score}</p>
             </Box>
           )}
         </Box>
