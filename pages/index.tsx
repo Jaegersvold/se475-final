@@ -86,8 +86,8 @@ const Home: NextPage = () => {
     if (table == "fish" && fishData !== null) {
       return (
         <Box>
-          {fishData.data.map((fish) => 
-            <Box display='flex'>
+          {fishData.data.map((fish, i) => 
+            <Box display='flex' key={i}>
               <Button id={fish.name} onClick={zoomFishData}>Name: {fish.name}</Button>
               <p>Average Length: {fish.average_size}</p>
             </Box>
@@ -97,8 +97,8 @@ const Home: NextPage = () => {
     } else if (table === "lakes" && lakesData !== null) {
       return (
         <Box>
-          {lakesData.data.map((lake) => 
-            <Box display='flex'>
+          {lakesData.data.map((lake, i) => 
+            <Box display='flex' key={i}>
               <Button id={lake.name} onClick={zoomLakesData}>Name: {lake.name}</Button>
               <p>Max Depth: {lake.max_depth}</p>
             </Box>
@@ -108,8 +108,8 @@ const Home: NextPage = () => {
     } else if (table === "friends" && friendsData !== null) {
       return (
         <Box>
-          {friendsData.data.map((friend) => 
-            <Box display='flex'>
+          {friendsData.data.map((friend, i) => 
+            <Box display='flex' key={i}>
               <Button id={friend.name} onClick={zoomFriendData}>Name: {friend.name}</Button>
               <p>Max Depth: {friend.fishing_score}</p>
             </Box>
